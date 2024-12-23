@@ -5,20 +5,20 @@
 class MyFirstCli < Formula
   desc ""
   homepage "https://github.com/vramahandry/homebrew-tools"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.2/my-first-cli-go_Darwin_x86_64.tar.gz"
-      sha256 "50aaa1db119fb11120e1003c34fb00f5740ec45c26279eec3445edfc85ff4bd0"
+      url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.3/my-first-cli-go_Darwin_x86_64.tar.gz"
+      sha256 "8399afc5b8ffcc390ccfcf2c05d11a838f5ac49eec200381a8256ed41fc918b7"
 
       def install
         bin.install "my-first-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.2/my-first-cli-go_Darwin_arm64.tar.gz"
-      sha256 "22d958c960c4ddc7e6e7fd8da391bbcabda29d35d5650ed8bc6df9a3898d4756"
+      url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.3/my-first-cli-go_Darwin_arm64.tar.gz"
+      sha256 "989789f928e55957c558a3554bd34c606a1e506b61904e4f1bb5dfbc54e65cfb"
 
       def install
         bin.install "my-first-cli"
@@ -29,8 +29,8 @@ class MyFirstCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.2/my-first-cli-go_Linux_x86_64.tar.gz"
-        sha256 "8dcdb711a79d8a4304cfad648577fa1a1a04b0f22bfaede2c3639ba4c662ebff"
+        url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.3/my-first-cli-go_Linux_x86_64.tar.gz"
+        sha256 "6f0badfc2fc1811d285cf11310d0b346531a6ef16b0ab1bf750502d24f9258b4"
 
         def install
           bin.install "my-first-cli"
@@ -39,8 +39,8 @@ class MyFirstCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.2/my-first-cli-go_Linux_arm64.tar.gz"
-        sha256 "1254583cf042a76ef32c4048e2c4dbdc18c344c1aae1e6297f5e4905241ad324"
+        url "https://github.com/vramahandry/my-first-cli-go/releases/download/0.0.3/my-first-cli-go_Linux_arm64.tar.gz"
+        sha256 "d237a87584892be64db571369836940e6a7dac905e43db093fd025757e916fda"
 
         def install
           bin.install "my-first-cli"
